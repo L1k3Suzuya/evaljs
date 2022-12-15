@@ -1,0 +1,41 @@
+/* Code CSS */
+body{
+    background-image: url(../img/index.jpeg);
+}
+input.controle {
+    outline: 0;
+    font-size: 14px;
+    width: 250px;
+}
+
+label.label {
+    display: inline-block;
+    width: 200px;
+    text-align: right;
+    font-style: italic;
+    margin-right: 5px;
+}
+
+input.controle:valid {
+    border: 3px solid green;
+}
+
+input.controle:invalid {
+    border: 3px solid red;
+}
+
+input.controle:valid+span:before {
+    font-family: "FontAwesome";
+    color: green;
+    font-size: 1.5em;
+}
+
+input.controle:invalid+span:before {
+    font-family: "FontAwesome";
+    color: red;
+    font-size: 1.5em;
+}
+
+form{
+    color: white;
+}

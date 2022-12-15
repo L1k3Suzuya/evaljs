@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="stylesheet" href="/css/exemple.css">
+</head>
+
+<body>
+    <form name="monFormulaire" id="monFormulaire" method="post" onsubmit="return false">
+        <div>
+            <label for='nom'>Entrez votre nom : </label>
+            <input class="controle" type='text' name='nom' id='nom' maxlength='20' required>
+            <span id='missNom'></span><br>
+        </div>
+        <div>
+            <label for='prenom'>Entrez votre prenom : </label>
+            <input class="controle" type='text' name='prenom' id='prenom' maxlength='20' required>
+            <span id='missPrenom'></span><br>
+
+        </div>
+        <br>
+        <div>Sexe&#42;
+            <label><input type="radio" name="sexe" value="feminin" checked required> F&eacute;minin</label>
+            <label><input type="radio" name="sexe" value="masculin" required> Masculin</label>
+            <label><input type="radio" name="sexe" value="autre" required> autre</label>
+        </div>
+        <br>
+        <div>
+            <label class="label">date de naissance :</label>
+            <input class="controle" type="date" name="date" id="date" required>
+            <span class="resultat"></span>
+        </div>
+        <div>
+            <label for='email'>Entrez votre email :</label>
+            <input class="controle" type='text' name='email' id='email' maxlength='20' required>
+            <span id='missEmail'></span><br>
+        </div>
+        <div>
+            <label for='code_postal'>Entrez votre Code Postal :</label>
+            <input class="controle" type='text' name='code_postal' id='code_postal' maxlength='20' required>
+            <span id='missCode_Postal'></span><br>
+        </div>
+        <div>
+            <label for='adresse'>Entrez votre adresse :</label>
+            <input class="controle" type='text' name='adresse' id='adresse' maxlength='20' required>
+            <span id='missAdresse'></span><br>
+        </div>
+
+        <div>
+            <label for='ville'>Entrez votre Ville :</label>
+            <input class="controle" type='text' name='ville' id='ville' maxlength='20' required>
+            <span id='missVille'></span><br>
+
+        </div>
+
+
+
+
+
+
+        <label for="sujet">Sujet&#42:</label>
+        <select id="sujet">
+            <label>
+                <option value="" selected>Veuillez séléctionner un sujet</option>
+            </label>
+            <label>
+                <option value="Mes commandes">Mes commandes</option>
+            </label>
+            <label>
+                <option value="Question sur un produit">Question sur un produit</option>
+            </label>
+            <label>
+                <option value="R&eacute;clamation">R&eacute;clamation</option>
+            </label>
+            <label>
+                <option value="Autres">Autres</option>
+            </label>
+        </select>
+        <br>
+        <label for="votre question">Votre question&#42:</label><textarea name="commentaire" rows="10"
+            cols="50"></textarea>
+        <br>
+        <br>
+        <input type="checkbox" name="accepte" value="accepte" id="message" required> &#42 <label for="nom">J'accepte le
+            traitement
+            informatique de ce formulaire</label>
+        <br>
+        <br>
+        <input type="submit" value="envoyer" id="bouton_envoi">
+        <input type="reset" value="annuler" id="bouton_annuler">
+    </form>
+
+    <script src="jarditou.js"></script>
+</body>
+
+</html>
